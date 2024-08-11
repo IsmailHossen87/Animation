@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes hasina {
+            0% {
+                top: 0;
+                left:0px;
+            }
+            25% {
+                left: 175px;
+                top: 200px;
+                background-color: beige;
+            }
+            50%{
+                left: 350px;
+                top: 0;
+                background-color: blue;
+            }
+            75%{
+                left: 525px;
+                top: 200px;
+                background-color: chartreuse;
+            }
+            100% {
+              left: 700px;
+              top: 0px;
+              background-color: hotpink;
+            }
+        }
+
+        .STAGE {
+            width: 800px;
+            height: 300px;
+            background-color: rgba(244, 83, 8, 0.614);
+        }
+
+        .ball {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            position: relative;
+            animation: hasina 2s ease-in-out 1s infinite alternate;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="STAGE">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>
